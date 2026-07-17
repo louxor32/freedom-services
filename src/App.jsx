@@ -74,7 +74,10 @@ function App() {
     <div>
       {intro && <div className="intro">
         <button className="skip" onClick={()=>setIntro(false)}>Passer</button>
-        <img src="{`${import.meta.env.BASE_URL}images/bjorn-mascotte.png" alt="Bjorn, mascotte FreeDom Services" />
+        <img
+  src={`${import.meta.env.BASE_URL}images/bjorn-mascotte.png`}
+  alt="Bjorn, mascotte FreeDom Services"
+/>
         <p className="eyebrow">BIENVENUE CHEZ</p>
         <h1>FreeDom Services</h1>
         <p>La force Viking au service de votre habitat</p>
