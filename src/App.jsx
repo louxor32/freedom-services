@@ -225,7 +225,11 @@ function App() {
           <h2>Quelques réalisations</h2>
           <div className="gallery">
             {gallery.map(([file,label]) => <figure key={file}>
-              <img loading="lazy" src={`/images/realisations/${file}`} alt={`${label} réalisé par FreeDom Services`}/>
+              <img
+  loading="lazy"
+  src={`${import.meta.env.BASE_URL}images/realisations/${file}`}
+  alt={`${label} réalisé par FreeDom Services`}
+/>
               <figcaption>{label}</figcaption>
             </figure>)}
           </div>
